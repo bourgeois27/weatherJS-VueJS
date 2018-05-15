@@ -2,6 +2,19 @@
 
 > Laboratoire #6 - GLO-3102
 
+## But :
+Se familiariser avec VueJS.
+
+## Travail :
+Réaliser une application permettant d'afficher la météo en **MVC**.
+
+## Consignes :
+*  L'application doit avoir deux vues
+  
+    *  Entête géolocalisé
+    *  Prévision de la semaine
+* Utiliser l'[API Weather Underground](https://www.google.ca) *Il faut donc se générer une clé d'API pour pouvoir y accéder*
+
 ## Build Setup
 
 ``` bash
