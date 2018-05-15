@@ -21,14 +21,6 @@
 <script>
 export default {
   props: {
-    city: {
-      type: String,
-      required: true
-    },
-    state: {
-      type: String,
-      required: true
-    },
     forecast: {
       type: Array,
       required: true

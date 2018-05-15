@@ -10,7 +10,7 @@
       <div class="alert alert-danger" role="alert">
         <span class="badge badge-pill badge-danger">Attention</span> Attendre que la latitude et la longitude s'affichent avant d'utiliser les boutons
       </div>
-      <!-- temp (remove me plz) -->
+      <!-- coords -->
       <p>Voici votre latitude: {{ latitude }}</p>
       <p>Voici votre longitude: {{ longitude }}</p>
 
@@ -22,8 +22,6 @@
       
       <!-- forecast -->
       <app-forecast
-          :city="city"
-          :state="state"
           :forecast="forecast">
       </app-forecast>
     </div>
@@ -43,10 +41,10 @@ export default {
   name: 'app',
   data() {
     return {
-      city: '',
-      state: '',
       latitude: '',
       longitude: '',
+      city: '',
+      state: '',
       forecast: []
     }
   },
@@ -72,6 +70,7 @@ export default {
     margin: 0;
     padding: 0;   
   }
+  
   footer {
     width: 100%;
     background-color: blue;

@@ -3,7 +3,7 @@ import * as Geo from './geo';
 const apiKey = 'f29e1a142713d161';
 const baseUrl = `http://api.wunderground.com/api/${apiKey}`;
 
-export async function getForecast() {
+export const getForecast = async () => {
   const position = await Geo.getCurrentPosition();
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
@@ -22,5 +22,5 @@ export async function getForecast() {
       high: day.high.celsius,
       low: day.low.celsius
     }))
-  }
+  };
 }
